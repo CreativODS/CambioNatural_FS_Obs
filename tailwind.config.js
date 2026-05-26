@@ -13,10 +13,13 @@ module.exports = {
         'cambio-yellow': '#FFD700',
       },
 
-      // Aquí agregamos la fuente DELA GOTHIC
-      fontFamily: {
-        sans: ['var(--font-inter)'], // Inter
-        dela: ['"Dela Gothic One"', 'sans-serif'], // Dela Gothic
+fontFamily: {
+        sans: ['var(--font-inter)'],
+        dela: ['"Dela Gothic One"', 'sans-serif'],
+      },
+      // Esto habilita las 5 columnas en Tailwind nativo
+      gridTemplateColumns: {
+        '5': 'repeat(5, minmax(0, 1fr))',
       },
     },
   },

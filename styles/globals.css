@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* RETÍCULA GLOBAL UNIFICADA */
+/* RETÍCULA GLOBAL */
 .main-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -28,12 +28,17 @@ body {
   padding: 0 48px;
 }
 
-/* CLASES DE POSICIONAMIENTO Y TAMAÑO */
-.col-start-2 { grid-column-start: 2; }
-.col-start-3 { grid-column-start: 3; }
-.col-span-2 { grid-column: span 2; }
-.col-span-3 { grid-column: span 3; }
-.col-span-4 { grid-column: span 4; }
+/* NO SE COLAPSAR */
+.main-grid > * {
+  /* Esto permite que los elementos hijos se expandan a lo largo de las columnas */
+  grid-column: span 1; 
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Usa esto para que sea flexible */
+  gap: 24px;
+}
 
 /* COMPONENTES ESPECÍFICOS */
 .horizontal-scroll-container {
