@@ -1,4 +1,3 @@
-/* 1. IMPORTACIÓN DE FUENTE: Traemos los pesos 800 (ExtraBold) y 900 (Black) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
@@ -6,9 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-}
+:root { --foreground-rgb: 0, 0, 0; }
 
 body {
   background-color: #ffffff;
@@ -17,27 +14,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* RETÍCULA GLOBAL */
+/* RETÍCULA GLOBAL UNIFICADA: Todo en un solo bloque */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 48px;
-}
-
-/* NO SE COLAPSAR */
-.main-grid > * {
-  /* Esto permite que los elementos hijos se expandan a lo largo de las columnas */
-  grid-column: span 1; 
-}
-
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Usa esto para que sea flexible */
-  gap: 24px;
 }
 
 /* COMPONENTES ESPECÍFICOS */
