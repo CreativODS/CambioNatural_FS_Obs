@@ -8,79 +8,53 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 253, 252, 246;
 }
 
 body {
-  /* 2. FONDO Y FUENTE BASE */
-  background-color: #ffff; /* El color crema de tu diseño */
-  color: #111111;            /* Texto casi negro */
+  background-color: #ffffff;
+  color: #111111;
   font-family: 'Inter', sans-serif;
-  
-  /* Suavizado de fuente para que se vea nítida en pantallas modernas */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* 3. FORZADO DE ESTILO "BLOQUE" PARA TÍTULOS */
-/* Esto hace que cualquier h1, h2, etc. se vea grueso y apretado automáticamente */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;       /* Black (El más grueso) */
-  letter-spacing: -0.04em; /* Tracking negativo (letras pegaditas) */
-  color: black;
-}
-
-/* Opcional: Color de selección amarillo (como tus puntos) */
-::selection {
-  background-color: #FACC15; /* yellow-400 */
-  color: black;
-}
-
-.underline-text {
-  text-decoration: underline;
-  text-decoration-thickness: 2px; /* Opcional: para que sea más elegante */
-  text-underline-offset: 4px;      /* Opcional: separa el subrayado del texto */
-}
-
-/* Retícula de 5 columnas para cualquier contenedor que use esta clase */
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px; /* Ajusta el espacio entre columnas */
-  padding-left: 48px;  /* Equivalente a tu px-12 actual */
-  padding-right: 48px;
-  max-width: 1440px;   /* O el ancho máximo que prefieras */
-  margin: 0 auto;
-}
-
-/* Helper para que cualquier elemento dentro pueda ocupar varias columnas */
-.col-span-3 { grid-column: span 3; }
-.col-span-1 { grid-column: span 1; }
-
+/* RETÍCULA GLOBAL UNIFICADA */
 .main-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
-/* Clases de posicionamiento */
+/* CLASES DE POSICIONAMIENTO Y TAMAÑO */
 .col-start-2 { grid-column-start: 2; }
 .col-start-3 { grid-column-start: 3; }
 .col-span-2 { grid-column: span 2; }
 .col-span-3 { grid-column: span 3; }
 .col-span-4 { grid-column: span 4; }
 
+/* COMPONENTES ESPECÍFICOS */
 .horizontal-scroll-container {
   display: flex;
-  overflow-x: auto;          /* Habilita el scroll horizontal */
-  gap: 36px;                 /* El margen de 36px que pediste */
-  padding-bottom: 10px;      /* Espacio para la barra de scroll si aparece */
-  scrollbar-width: thin;     /* Estilo para navegadores modernos */
+  overflow-x: auto;
+  gap: 36px;
+  scrollbar-width: thin;
 }
 
 .scroll-img {
-  height: 350px;             /* Altura fija */
-  width: auto;               /* Mantiene la proporción original */
-  flex-shrink: 0;            /* Evita que las fotos se compriman */
-  object-fit: cover;         /* Recorta la imagen si es necesario para mantener la proporción */
+  height: 350px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.font-dela { font-family: 'Dela Gothic One', sans-serif; }
+
+.underline-text {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
