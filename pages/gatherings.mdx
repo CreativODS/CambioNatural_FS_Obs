@@ -1,70 +1,53 @@
-import GatheringsHero from '../components/GatheringsHero'
-import GatheringsIntro from '../components/GatheringsIntro'
-import SingleSectorSection from '../components/SingleSectorSection'
-
-
-
-{/* GATHERINGS HERO: 4 columnas empezando desde la 2da */}
-<div className="main-grid">
+<div className="main-grid py-12">
   <div className="col-start-2 col-span-4">
-    <GatheringsHero>
-      <div>
-        <span>
-          In a world affected by <span className="underline-text">polycrisis</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future.
-        </span>
-        <span>
-          Our work is nourished by our nomadic experience, deep research and encounters across the globe.
-        </span>
-      </div>
-    </GatheringsHero>
+    <h1 className="font-dela uppercase text-4xl md:text-6xl mb-6">
+      Gatherings
+    </h1>
+    <div className="text-lg md:text-xl space-y-4">
+      <p>
+        In a world affected by <span className="underline-text">polycrisis</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future.
+      </p>
+      <p>
+        Our work is nourished by our nomadic experience, deep research and encounters across the globe.
+      </p>
+    </div>
   </div>
 </div>
 
-
-{/* GATHERINGS INTRO: 3 columnas empezando desde la 3ra */}
-<div className="main-grid">
+{/* INTRO: Estructura directa */}
+<div className="main-grid py-12">
   <div className="col-start-3 col-span-3">
-    <GatheringsIntro>
-      <img src="/assets/images/cambio_natural.png" alt="" />
-      <div>
-        <span>
-          As Cambio Natural we convene spaces for dialogue where these different elements converge and facilitate them with tools, methods and connections to navigate tensions, build trust and nurture bold ideas worth failing for.
-        </span>
-      </div>
-    </GatheringsIntro>
+    <img src="/assets/images/cambio_natural.png" alt="Cambio Natural" className="w-full mb-6" />
+    <p className="text-lg">
+      As Cambio Natural we convene spaces for dialogue where these different elements converge and facilitate them with tools, methods and connections to navigate tensions, build trust and nurture bold ideas worth failing for.
+    </p>
   </div>
 </div>
 
 {/* GATHERINGS EVENT 1 */}
-<div className="main-grid">
-  {/* Col 1-2: Título, descripción y botón */}
+<div className="main-grid py-12">
   <div className="col-span-2">
     <h2 className="font-dela uppercase text-xl">Online dialogue spaces</h2>
-    <p>SRI2022: Social Innovation for Planetary Health. From science to praxis.</p>
-    <a href="#" className="underline font-bold">Watch video</a>
+    <p className="mt-2">SRI2022: Social Innovation for Planetary Health. From science to praxis.</p>
+    <a href="#" className="underline font-bold mt-4 block">Watch video</a>
   </div>
 
-  {/* Col 3-5: Texto general y foto abajo */}
   <div className="col-span-3">
     <p>Hosted by the Sustainability Research Innovation Summit, this was a participatory dialogue between practitioners from different cultural and geographical latitudes, across disciplines and sectors, aimed at discussing the transformations needed towards more desirable futures for our planet and species.</p>
-    <img src="/assets/images/cambio_natural.png" alt="Evento SRI 2022" className="w-full mt-4" />
+    <img src="/assets/images/cambio_natural.png" alt="Evento SRI 2022" className="w-full mt-6" />
   </div>
 </div>
 
 {/* GATHERINGS EVENT 2 */}
-<div className="main-grid">
-  
-  {/* COLUMNAS 1 y 2: Título */}
+<div className="main-grid py-12">
   <div className="col-span-2">
     <h2 className="font-dela uppercase text-xl">Community care gatherings</h2>
   </div>
 
-  {/* COLUMNAS 3 a 5: Texto y la imagen principal */}
   <div className="col-span-3">
     <p>Hosted by Radici a Moncalieri we organized a three day gathering to eat, drink, laugh, cry, sing, sleep and take home (and share with others) lessons about resilience and strength from nature, other communities, and cultures that are successfully facing challenges today.</p>
   </div>
 
-  {/* Scroll Horizontal (también en columnas 3 a 5) */}
   <div className="col-start-3 col-span-3 mt-8">
     <div className="horizontal-scroll-container">
       <img src="/assets/images/cambio_natural.png" alt="Evento 1" className="scroll-img" />
@@ -72,23 +55,18 @@ import SingleSectorSection from '../components/SingleSectorSection'
       <img src="/assets/images/cambio_natural.png" alt="Evento 3" className="scroll-img" />
     </div>
   </div>
-
 </div>
 
 {/* GATHERINGS EVENT 3 */}
-<div className="main-grid">
-  
-  {/* COLUMNAS 1 y 2: Título */}
+<div className="main-grid py-12">
   <div className="col-span-2">
     <h2 className="font-dela uppercase text-xl">Transformative learning experiences</h2>
   </div>
 
-  {/* COLUMNAS 3 a 5: Texto y la imagen principal */}
   <div className="col-span-3">
     <p>We co-organized the Global Doughnut Days Mexico 2025, a three day gathering focused on approaching alternative economic frameworks and practices - using the Doughnut Economics framework as guide, together with Coalición Tricolor, a member of the Doughnut Economics Action Lab community. The event included and serviced academics, government officials, business leaders and financiers.</p>
   </div>
 
-  {/* Scroll Horizontal (también en columnas 3 a 5) */}
   <div className="col-start-3 col-span-3 mt-8">
     <div className="horizontal-scroll-container">
       <img src="/assets/images/cambio_natural.png" alt="Evento 1" className="scroll-img" />
@@ -96,11 +74,7 @@ import SingleSectorSection from '../components/SingleSectorSection'
       <img src="/assets/images/cambio_natural.png" alt="Evento 3" className="scroll-img" />
     </div>
   </div>
-
 </div>
 
 import Newsletter from '../components/Newsletter'
-
-{/* ... resto de tu contenido ... */}
-
 <Newsletter />
