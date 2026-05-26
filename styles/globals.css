@@ -41,3 +41,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-thickness: 2px; /* Opcional: para que sea más elegante */
   text-underline-offset: 4px;      /* Opcional: separa el subrayado del texto */
 }
+
+/* Retícula de 5 columnas para cualquier contenedor que use esta clase */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; /* Ajusta el espacio entre columnas */
+  padding-left: 48px;  /* Equivalente a tu px-12 actual */
+  padding-right: 48px;
+  max-width: 1440px;   /* O el ancho máximo que prefieras */
+  margin: 0 auto;
+}
+
+/* Helper para que cualquier elemento dentro pueda ocupar varias columnas */
+.col-span-3 { grid-column: span 3; }
+.col-span-1 { grid-column: span 1; }
