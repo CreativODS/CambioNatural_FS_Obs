@@ -71,3 +71,7 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+<main className="flex-grow w-full animate-in fade-in duration-500 main-grid">
+  {children}
+</main>

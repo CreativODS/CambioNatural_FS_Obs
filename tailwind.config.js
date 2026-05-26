@@ -13,10 +13,10 @@ module.exports = {
         'cambio-yellow': '#FFD700',
       },
 
-      // 🔥 Aquí agregamos la fuente DELA GOTHIC
+      // Aquí agregamos la fuente DELA GOTHIC
       fontFamily: {
-        sans: ['var(--font-inter)'], // Lo que ya tenías
-        dela: ['"Dela Gothic One"', 'sans-serif'], // NUEVA fuente
+        sans: ['var(--font-inter)'], // Inter
+        dela: ['"Dela Gothic One"', 'sans-serif'], // Dela Gothic
       },
     },
   },

@@ -56,3 +56,31 @@ h1, h2, h3, h4, h5, h6 {
 /* Helper para que cualquier elemento dentro pueda ocupar varias columnas */
 .col-span-3 { grid-column: span 3; }
 .col-span-1 { grid-column: span 1; }
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+/* Clases de posicionamiento */
+.col-start-2 { grid-column-start: 2; }
+.col-start-3 { grid-column-start: 3; }
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.col-span-4 { grid-column: span 4; }
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;          /* Habilita el scroll horizontal */
+  gap: 36px;                 /* El margen de 36px que pediste */
+  padding-bottom: 10px;      /* Espacio para la barra de scroll si aparece */
+  scrollbar-width: thin;     /* Estilo para navegadores modernos */
+}
+
+.scroll-img {
+  height: 350px;             /* Altura fija */
+  width: auto;               /* Mantiene la proporción original */
+  flex-shrink: 0;            /* Evita que las fotos se compriman */
+  object-fit: cover;         /* Recorta la imagen si es necesario para mantener la proporción */
+}
