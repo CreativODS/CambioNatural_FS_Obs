@@ -35,3 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FACC15; /* yellow-400 */
   color: black;
 }
+
+.underline-text {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Opcional: para que sea más elegante */
+  text-underline-offset: 4px;      /* Opcional: separa el subrayado del texto */
+}
