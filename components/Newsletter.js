@@ -1,31 +1,44 @@
-// components/Newsletter.js
 export default function Newsletter() {
   return (
-    <div className="bg-white p-16 rounded-xl shadow-lg text-black">
-        <p className="text-sm uppercase tracking-wide">Join to Newsletter</p>
-        <h2 className="font-dela text-3xl my-4 uppercase">Lets co-create together</h2>
-        <p className="text-base">
-          Short bi-monthly nuggets on Planetary Health, projects and research that are changing the world, delivered to your inbox - No spam, real action.
-        </p>
-      </div>
+    <section className="rounded-[32px] bg-white px-6 py-8 md:px-10 md:py-10 text-black shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:items-end">
+        <div className="md:col-span-2">
+          <p className="text-sm uppercase tracking-[0.18em]">Join to Newsletter</p>
 
-      {/* Columnas 3, 4 y 5: Imagen y formulario */}
-      <div className="col-span-3 flex flex-col gap-4">
-        {/* Imagen principal */}
-        <img src="/assets/images/meta-crisis.png" alt="Newsletter" className="w-full max-h-[200px] object-contain" />
-        
-        {/* Formulario: Ocupa col 3 y 4, botón en col 5 */}
-        <div className="grid grid-cols-3 gap-2">
-          <input 
-            type="email" 
-            placeholder="Enter your email" 
-            className="col-span-2 border border-black p-2 bg-transparent"
+          <h2 className="font-dela text-2xl md:text-3xl leading-tight my-4 uppercase">
+            Lets co-create together
+          </h2>
+
+          <p className="text-base leading-relaxed">
+            Short bi-monthly nuggets on Planetary Health, projects and research
+            that are changing the world, delivered to your inbox - No spam,
+            real action.
+          </p>
+        </div>
+
+        <div className="md:col-span-3 flex flex-col gap-5">
+          <img
+            src="/assets/images/meta-crisis.png"
+            alt="Newsletter"
+            className="w-full max-h-[220px] object-contain object-left"
           />
-          <button className="col-span-1 bg-black text-white px-4 py-2 hover:opacity-80 transition-opacity">
-            Subscribe
-          </button>
+
+          <form className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,1fr)_auto]">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="min-h-[52px] border border-black bg-transparent px-4 outline-none"
+            />
+
+            <button
+              type="submit"
+              className="min-h-[52px] bg-black text-white px-6 hover:opacity-85 transition-opacity"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
