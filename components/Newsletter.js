@@ -3,7 +3,7 @@ export default function Newsletter() {
   return (
     <div className="main-grid py-12">
       {/* Columna 1 y 2: Información */}
-      <div className="col-span-2">
+      <div className="bg-white p-16 rounded-xl shadow-lg w-full text-black">
         <p className="text-sm uppercase tracking-wide">Join to Newsletter</p>
         <h2 className="font-dela text-3xl my-4 uppercase">Lets co-create together</h2>
         <p className="text-base">
