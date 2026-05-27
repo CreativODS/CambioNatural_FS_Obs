@@ -1,32 +1,27 @@
 import GatheringsHero from '../components/GatheringsHero'
 import Newsletter from '../components/Newsletter'
 
-<GatheringsHero>
- {/* El contenedor principal del Hero */}
-  <div className="main-grid items-center">
-    
-    {/* COLUMNA 1 y 2: Aquí va la Esfera/Textura */}
-    <div className="col-span-2">
-      <img src="/assets/images/oceanos blancos.png" alt="Esfera" className="w-full h-auto" />
-    </div>
-
-    {/* COLUMNA 3, 4 y 5: Aquí va el bloque de texto principal */}
-    <div className="col-span-3 text-white">
-      <p className="mb-6 text-xl md:text-2xl font-inter leading-tight">
-        In a world affected by <span className="underline decoration-2">polycrisis</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future. 
+<>
+  <GatheringsHero>
+    <div className="main-grid items-center">
+      <div className="col-span-2">
+        <img src="/assets/images/oceanos blancos.png" alt="Esfera" className="w-full" />
+      </div>
+      <div className="col-span-3 text-white">
+        <p className="mb-6 text-xl md:text-2xl font-inter leading-tight">
+          In a world affected by <span className="underline decoration-2">polycrisis</span>we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future. 
         <span className="font-dela block mt-4 text-2xl md:text-3xl leading-[1.15]">
-          Our work is nourished by our nomadic experience, deep research and encounters across the globe.
+        Our work is nourished by our nomadic experience, deep research and encounters across the globe.
         </span>
-      </p>
+        </p>
+      </div>
     </div>
-
-  </div>
-</GatheringsHero>
+  </GatheringsHero>
 
 {/* SECCIÓN DEL NUEVO TEXTO: Aquí empieza en la columna 3 porque quieres que se alinee con el texto de arriba */}
 <div className="main-grid mb-32 mt-20">
   <div className="col-start-3 col-span-3 text-lg md:text-xl leading-relaxed">
-    <p>
+      <p>
       As Cambio Natural we convene spaces for dialogue where these different elements converge and facilitate them with tools, methods and connections to navigate tensions, build trust and nurture bold ideas worth failing for.
     </p>
   </div>
