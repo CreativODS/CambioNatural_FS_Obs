@@ -1,33 +1,36 @@
-import GatheringsHero from '../components/GatheringsHero'
-import Newsletter from '../components/Newsletter'
-
 <GatheringsHero>
+ import GatheringsHero from '../components/GatheringsHero'
+import Newsletter from '../components/Newsletter'
+ {/* El contenedor principal del Hero */}
   <div className="main-grid items-center">
-    {/* COLUMNA DE IMAGEN (Esfera/Textura) */}
+    
+    {/* COLUMNA 1 y 2: Aquí va la Esfera/Textura */}
     <div className="col-span-2">
-      <img src="/assets/images/oceanos-blanco.png" alt="Textura" className="w-full" />
+      <img src="/assets/images/oceanos blancos.png" alt="Esfera" className="w-full h-auto" />
     </div>
 
-    {/* COLUMNA DE TEXTO (Alineado a la derecha de la imagen) */}
+    {/* COLUMNA 3, 4 y 5: Aquí va el bloque de texto principal */}
     <div className="col-span-3 text-white">
-      <p className="mb-0 text-xl md:text-2xl font-inter leading-tight">
-        In a world affected by <span className="underline decoration-2 underline-offset-4">polycrisis</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future.
-      </p>
-      <p className="font-dela mt-4 text-2xl md:text-3xl leading-[1.15]">
-        Our work is nourished by our nomadic experience, deep research and encounters across the globe.
+      <p className="mb-6 text-xl md:text-2xl font-inter leading-tight">
+        In a world affected by <span className="underline decoration-2">polycrisis</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future. 
+        <span className="font-dela block mt-4 text-2xl md:text-3xl leading-[1.15]">
+          Our work is nourished by our nomadic experience, deep research and encounters across the globe.
+        </span>
       </p>
     </div>
+
   </div>
 </GatheringsHero>
 
-{/* NUEVO BLOQUE: Con su margen inferior de 128px (mb-32) */}
-<div className="main-grid mb-32">
+{/* SECCIÓN DEL NUEVO TEXTO: Aquí empieza en la columna 3 porque quieres que se alinee con el texto de arriba */}
+<div className="main-grid mb-32 mt-20">
   <div className="col-start-3 col-span-3 text-lg md:text-xl leading-relaxed">
     <p>
       As Cambio Natural we convene spaces for dialogue where these different elements converge and facilitate them with tools, methods and connections to navigate tensions, build trust and nurture bold ideas worth failing for.
     </p>
   </div>
 </div>
+
 {/* SECCIÓN EVENTOS */}
 <div className="main-grid py-32 gap-y-16">
   
