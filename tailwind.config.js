@@ -12,12 +12,10 @@ module.exports = {
         'cambio-pink': '#FF00FF',
         'cambio-yellow': '#FFD700',
       },
-
-fontFamily: {
+      fontFamily: {
         sans: ['var(--font-inter)'],
         dela: ['"Dela Gothic One"', 'sans-serif'],
       },
-      // Esto habilita las 5 columnas en Tailwind nativo
       gridTemplateColumns: {
         '5': 'repeat(5, minmax(0, 1fr))',
       },

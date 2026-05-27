@@ -50,8 +50,8 @@ export default function Layout({ children }) {
 
       {/* CONTENIDO PRINCIPAL: Integrado con tu retícula main-grid */}
       <main className="flex-grow w-full animate-in fade-in duration-500">
-        {children}
-      </main>
+  {children}
+</main>
 
       {/* FOOTER */}
       <footer className="py-10 border-t border-black mt-auto w-full bg-inherit">

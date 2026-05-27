@@ -25,9 +25,6 @@ body {
   padding: 0 48px;
 }
 
-.main-grid > div {
-  min-width: 0;
-}
 /* COMPONENTES ESPECÍFICOS */
 .horizontal-scroll-container {
   display: flex;
