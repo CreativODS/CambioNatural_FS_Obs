@@ -49,7 +49,7 @@ export default function Layout({ children }) {
       </header>
 
       {/* CONTENIDO PRINCIPAL: Integrado con tu retícula main-grid */}
-      <main className="flex-grow w-full animate-in fade-in duration-500 main-grid">
+      <main className="flex-grow w-full animate-in fade-in duration-500">
         {children}
       </main>
 
