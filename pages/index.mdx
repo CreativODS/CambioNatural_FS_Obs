@@ -14,20 +14,36 @@ import Article from '../components/Article' // Tu componente .jsx
   </span>
 </HeroSection>
 
-  {/* Sección 1: Texto col 1-3, Imagen col 4-5 (max 350px) */}
-  <section className="main-grid py-20 items-center">
-    <div className="col-span-3">
-      <p className="text-[1.1rem]">
-        We are a collective supporting bridge builders and caregivers with technology, gatherings and community. 
+  {/* Sección 2 */}
+<section className="main-grid py-20 items-center">
+  <div className="col-span-3">
+    {/* Contenedor dle texto */}
+    <div className="leading-[1.1]">
+      
+      {/* Dela Gothic text */}
+      <span className="font-dela block text-[1.45rem] md:text-[2.2rem] mb-6">
+        We are a collective supporting bridge builders
+      </span>
+      
+      {/* Inter Text */}
+      <p className="font-inter font-normal text-[1.1rem] md:text-[1.3rem] leading-[1.5] text-gray-700">
+        and caregivers with technology, gatherings and community. 
         We bring wisdom and practice from the margins to the focus of transformative actions guided by reciprocity, mutual care and regeneration.
       </p>
+      
     </div>
-    <div className="col-span-2">
-      <img src="/assets/images/econdmainphoto.png" className="w-full max-h-[350px] object-cover rounded-xl" />
-    </div>
-  </section>
+  </div>
+  
+  <div className="col-span-2">
+    <img 
+      src="/assets/images/econdmainphoto.png" 
+      alt="Collective work"
+      className="w-full max-h-[350px] object-cover rounded-xl" 
+    />
+  </div>
+</section>
 
-  {/* Bloque Together: Col 2-4 */}
+  {/* TOGETHER */}
   <section className="main-grid py-20 text-center">
     <div className="col-start-2 col-span-3">
       <BigTitle maintitle="/assets/images/together.png" />
@@ -35,32 +51,49 @@ import Article from '../components/Article' // Tu componente .jsx
     </div>
   </section>
 
-  {/* Sección: Texto/Cuerpo col 1-4, Imagen col 5 (max 350px) */}
-  <section className="main-grid py-20">
+  {/* Sección 3 */}
+<section className="py-20">
+  
+  {/* Elemento 1 */}
+  <div className="main-grid mb-20 items-start">
     <div className="col-span-4">
       <h3 className="font-dela uppercase text-[1.3rem] mb-6">Cross-sector Collaboration Framework</h3>
-      <p className="text-lg">Developed a Cross-sector Collaboration Management Framework and Toolkit for TeamUp...</p>
+      <p className="text-lg">...</p>
     </div>
     <div className="col-span-1">
       <img src="/assets/images/CN0301.png" className="w-full max-h-[350px] object-cover rounded-xl" />
     </div>
-  </section>
+  </div>
 
-  {/* Integración de Articles usando el componente JSX */}
-  <section className="main-grid py-20 gap-y-16">
-    <div className="col-span-5 md:col-span-2">
-      <Article 
-        title="Global Doughnut México"
-        description="A gathering and learning process focused on alternative economic frameworks."
-        image="/assets/images/emblem_isolated.jpg"
-      />
+  {/* Elemento 2 */}
+  <div className="main-grid mb-20 items-start">
+    <div className="col-span-4">
+      <h3 className="font-dela uppercase text-[1.3rem] mb-6">Global Doughnut México</h3>
+      <p className="text-lg">...</p>
     </div>
-    <div className="col-span-5 md:col-span-2 md:col-start-4">
-      <Article 
-        title="Media Club"
-        description="A space for honest, thoughtful conversations about the media."
-        image="/assets/images/meta-crisis.png"
-      />
+    <div className="col-span-1">
+      <img src="/assets/images/CN0302.png" className="w-full max-h-[350px] object-cover rounded-xl" />
+    </div>
+  </div>
+
+  {/* Elemento 3 */}
+  <div className="main-grid items-start">
+    <div className="col-span-4">
+      <h3 className="font-dela uppercase text-[1.3rem] mb-6">Media Club</h3>
+      <p className="text-lg">...</p>
+    </div>
+    <div className="col-span-1">
+      <img src="/assets/images/CN0303.png" className="w-full max-h-[350px] object-cover rounded-xl" />
+    </div>
+  </div>
+
+</section>
+
+  <section className="pb-24 md:pb-32">
+    <div className="main-grid">
+      <div className="col-span-5">
+        <Newsletter />
+      </div>
     </div>
   </section>
 
