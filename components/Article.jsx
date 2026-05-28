@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Article({ title, category, description, link, imageSrc }) {
-  return
+  return (
     <div 
       className="bg-[#F2D607] p-8 md:p-12 relative overflow-hidden" 
       style={{
