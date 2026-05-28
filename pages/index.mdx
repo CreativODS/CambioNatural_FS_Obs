@@ -1,21 +1,16 @@
 import Newsletter from '../components/Newsletter'
+import Article from '../components/Article'
 
-<div className="overflow-hidden bg-white text-black">
+<div className="bg-white text-black">
 
-  <section className="relative pt-20 md:pt-28 pb-20 md:pb-28">
-    <img
-      src="/assets/images/Group 592.png"
-      alt=""
-      className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover"
-    />
-
-    <div className="main-grid relative z-10">
+  {/* HERO: Ajustado al diseño del PDF */}
+  <section className="pt-20 pb-16">
+    <div className="main-grid">
       <div className="col-span-5 md:col-span-4">
-        <h1 className="leading-[1.03] max-w-[1100px]">
+        <h1 className="leading-[1.03]">
           <span className="block font-inter text-[1.45rem] md:text-[2.2rem]">
             ¿How do we meet and collaborate to lead towards a
           </span>
-
           <span className="block mt-3 font-dela text-[1.1rem] md:text-[1.65rem] leading-[1.06]">
             desirable future for all and the planet?
           </span>
@@ -24,109 +19,52 @@ import Newsletter from '../components/Newsletter'
     </div>
   </section>
 
-  <section className="pb-20 md:pb-24">
+  {/* INTRO Y TOGETHER */}
+  <section className="pb-20">
     <div className="main-grid">
-      <div className="col-span-5 md:col-start-3 md:col-span-3 text-[1.05rem] md:text-[1rem] leading-[1.18]">
-        <p>
+      <div className="col-span-5 md:col-start-4 md:col-span-2">
+        <p className="text-[1.05rem] leading-[1.2]">
           We are a collective supporting bridge builders and caregivers with technology, gatherings and community. We bring wisdom and practice from the margins to the focus of transformative actions guided by reciprocity, mutual care and regeneration.
         </p>
       </div>
     </div>
+
+    {/* Bloque "TOGETHER" */}
+    <div className="main-grid mt-20">
+      <div className="col-span-5 text-center">
+        <p className="text-pink-500 font-bold uppercase tracking-widest">Here is the deal, we can only achieve it,</p>
+        <h2 className="text-[3rem] md:text-[5rem] font-dela uppercase text-pink-600">Together</h2>
+      </div>
+    </div>
   </section>
 
-  <section className="pb-16 md:pb-20">
+  {/* ARTÍCULOS EN RETÍCULA DE 5 COLUMNAS */}
+  <section className="pb-28">
     <div className="main-grid">
-      <div className="col-span-5 flex justify-center">
-        <img
-          src="/assets/images/together.png"
-          alt="This is how we do it together"
-          className="w-full max-w-[620px] h-auto"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section className="pb-20 md:pb-28">
-    <div className="main-grid items-start">
-      <article className="col-span-5 md:col-span-3">
-        <h2 className="font-dela uppercase text-[1.1rem] md:text-[1.35rem] leading-[1.08]">
-          Cross-sector Collaboration Framework
-        </h2>
-
-        <p className="mt-6 text-[1.05rem] md:text-[1rem] leading-[1.22] max-w-[720px]">
-          Developed a Cross-sector Collaboration Management Framework and Toolkit for TeamUp, a cross-sectoral initiative supporting young people in rural Uganda that has enabled youth leaders, local government, civil society, NGOs and private companies to come together and engage in a purposeful way guided by common values and principles.
-        </p>
-
-        <img
-          src="/assets/images/econdmainphoto.png"
-          alt="Cross-sector Collaboration Framework"
-          className="mt-8 w-full max-w-[760px] rounded-[20px]"
-        />
-      </article>
-
-      <div className="col-span-5 md:col-span-2 flex flex-col gap-14">
-        <article>
-          <h3 className="font-dela uppercase text-[1rem] md:text-[1.15rem] leading-[1.08]">
-            Global Doughnut México
-          </h3>
-
-          <p className="mt-4 text-[1.02rem] leading-[1.2]">
-            A gathering and learning process focused on alternative economic frameworks, systems change and collaborative practice.
-          </p>
-
-          <img
-            src="/assets/images/emblem_isolated.jpg"
-            alt="Global Doughnut México"
-            className="mt-6 w-full rounded-[20px]"
-          />
-        </article>
-
-        <article>
-          <h3 className="font-dela uppercase text-[1rem] md:text-[1.15rem] leading-[1.08]">
-            Media Club
-          </h3>
-
-          <p className="mt-4 text-[1.02rem] leading-[1.2]">
-            Stories, reflections and provocations to help us think through crisis, care, collaboration and regenerative futures.
-          </p>
-
-          <img
-            src="/assets/images/meta-crisis.png"
-            alt="Media Club"
-            className="mt-6 w-full rounded-[20px]"
-          />
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section className="pb-20 md:pb-28">
-    <div className="main-grid items-start">
+      {/* Columna 1-2: Framework */}
       <div className="col-span-5 md:col-span-2">
-        <p className="uppercase tracking-[0.18em] text-sm">
-          Article
-        </p>
-
-        <h2 className="mt-4 font-dela uppercase text-[1.15rem] md:text-[1.4rem] leading-[1.08]">
-          Meta-Crisis the crisis of all the crisis
-        </h2>
+        <Article 
+          title="Cross-sector Collaboration Framework"
+          description="From the experience of TeamUp, we co-designed a framework to support youth, government and NGOs..."
+          image="/assets/images/econdmainphoto.png"
+        />
       </div>
-
-      <div className="col-span-5 md:col-span-3">
-        <p className="text-[1.05rem] md:text-[1rem] leading-[1.22] max-w-[720px]">
-          Have you ever thought about how each crisis is connected? There's a critical point that detonates and interconnects crisis in each context...
-        </p>
-
-        <img
-          src="/assets/images/meta-crisis.png"
-          alt="Meta-Crisis article"
-          className="mt-8 w-full rounded-[24px]"
+      
+      {/* Columna 3-4: Doughnut & Media Club */}
+      <div className="col-span-5 md:col-start-4 md:col-span-2 flex flex-col gap-16">
+        <Article 
+          title="Global Doughnut México"
+          description="A gathering and learning process focused on alternative economic frameworks."
+        />
+        <Article 
+          title="Media Club"
+          description="A space for honest, thoughtful conversations about the media that shape our lives."
         />
       </div>
     </div>
   </section>
 
-  <section className="pb-24 md:pb-32">
+  <section className="pb-24">
     <div className="main-grid">
       <div className="col-span-5">
         <Newsletter />
