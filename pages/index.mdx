@@ -1,7 +1,7 @@
 import Newsletter from '../components/Newsletter'
 import { HeroSection } from '../components/HeroSection'
 import BigTitle from '../components/BigTitle'
-import Article from '../components/Article' // Tu componente .jsx
+import Article from '../components/Article'
 
 <div className="overflow-hidden bg-white text-black">
 
@@ -81,7 +81,19 @@ import Article from '../components/Article' // Tu componente .jsx
 
 </section>
 
-  <section className="pb-24 md:pb-32">
+<section className="main-grid py-20">
+  <div className="col-start-2 col-span-3">
+    <Article 
+      category="Article - Substack"
+      title="Failure as a tool for liberation"
+      description="Have you ever thought about how each crisis is connected? There's a critical point that detonates and interconnects crisis in each context..."
+      link="https://substack.com/"
+      imageSrc="/assets/images/CNglobe.png"
+    />
+  </div>
+</section>
+
+ <section className="pb-24 md:pb-32">
     <div className="main-grid">
       <div className="col-span-5">
         <Newsletter />
