@@ -14,7 +14,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* RETÍCULA GLOBAL UNIFICADA: Todo en un solo bloque */
 .main-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -25,20 +24,29 @@ body {
   padding: 0 48px;
 }
 
-/* COMPONENTES ESPECÍFICOS */
 .horizontal-scroll-container {
   display: flex;
-  overflow-x: auto;
   gap: 36px;
+  overflow-x: auto;
+  padding-bottom: 8px;
   scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scroll-img {
   height: 350px;
   width: auto;
   flex-shrink: 0;
-  object-fit: cover;
+  display: block;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 24px;
+  }
 }
 
 .font-dela { font-family: 'Dela Gothic One', sans-serif; }
