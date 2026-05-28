@@ -12,9 +12,11 @@ import GatheringsHero from '../components/GatheringsHero'
 
     <div className="main-grid relative z-10">
       <div className="col-span-5 md:col-start-2 md:col-span-3">
-        <p className="max-w-[760px] text-[1.05rem] md:text-[1.15rem] leading-[1.08]">
-          In a world affected by <span className="underline-text">polycrises</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future.
-          <span className="font-dela block mt-4 text-[1.45rem] md:text-[2.2rem] leading-[1.06]">
+        <p className="leading-[1.08]">
+          <span className="block text-[1.45rem] md:text-[2.2rem] font-inter">
+            In a world affected by <span className="underline-text">polycrises</span> we see strategic polarisation and disconnection not only as a missed opportunity but as a threat to our common future.
+          </span>
+          <span className="font-dela block mt-8 text-[1.45rem] md:text-[2.2rem] leading-[1.06]">
             Our work is nourished by our nomadic experience, deep research and encounters across the globe.
           </span>
         </p>
@@ -32,80 +34,53 @@ import GatheringsHero from '../components/GatheringsHero'
     </div>
   </section>
 
-  <div className="main-grid pb-12 md:pb-16">
-    <div className="col-span-5 border-t border-white/20"></div>
-  </div>
-  <section className="pb-20 md:pb-28">
-    <div className="main-grid items-start">
-      <div className="col-span-5 md:col-span-2">
-        <h2 className="font-dela uppercase text-[1.15rem] md:text-[1.35rem] leading-[1.1]">
-          Online dialogue spaces
-        </h2>
-
-        <p className="mt-2 text-[1.05rem] leading-[1.18]">
-          SRI2022: Social Innovation for Planetary Health
-          <br />
-          <em>From science to praxis</em>
-        </p>
-
-        <a href="#" className="mt-8 inline-block border-b border-white pb-1 text-[1.05rem]">
-          Watch video
-        </a>
-      </div>
-
-      <div className="col-span-5 md:col-span-3 text-[1.05rem] md:text-[1rem] leading-[1.18]">
-        <p className="max-w-[640px]">
-          Hosted by the Sustainability Research Innovation Summit, this was a participatory dialogue between practitioners from different cultural and geographical latitudes, across disciplines and sectors, aimed at discussing the transformations needed towards more desirable futures for our planet and species.
-        </p>
-      </div>
-    </div>
-  </section>
+  {/* Sección de eventos con scrolls en col 3-5 */}
   <section className="pb-20 md:pb-24">
-    <div className="main-grid items-start">
+    <div className="main-grid items-start mb-10">
       <div className="col-span-5 md:col-span-2">
         <h2 className="font-dela uppercase text-[1.15rem] md:text-[1.35rem] leading-[1.1]">
           Community care gatherings
         </h2>
       </div>
-
       <div className="col-span-5 md:col-span-3 text-[1.05rem] md:text-[1rem] leading-[1.18]">
-        <p className="max-w-[760px]">
-          Hosted by Radici a Moncalieri we organized a three day gathering to eat, drink, laugh, cry, sing, sleep and take home (and share with others) lessons about resilience and strength from nature, other communities, and cultures that are successfully facing challenges today.
-        </p>
+        <p>Hosted by Radici a Moncalieri we organized a three day gathering...</p>
       </div>
     </div>
 
-    <div className="horizontal-scroll-container main-grid pl-6 md:pl-0">
-      <div className="flex gap-4 overflow-x-auto pb-4">
-        <img src="/assets/images/cambio_natural.png" alt="Foto 1" className="scroll-img h-[300px] w-auto" />
-        <img src="/assets/images/cambio_natural.png" alt="Foto 2" className="scroll-img h-[300px] w-auto" />
-        <img src="/assets/images/cambio_natural.png" alt="Foto 3" className="scroll-img h-[300px] w-auto" />
+    <div className="main-grid">
+      <div className="col-span-5 md:col-start-3 md:col-span-3">
+        <div className="horizontal-scroll-container overflow-x-auto">
+          <div className="flex gap-4 pb-4">
+            <img src="/assets/images/cambio_natural.png" alt="Foto" className="scroll-img h-[300px] w-auto" />
+            <img src="/assets/images/cambio_natural.png" alt="Foto" className="scroll-img h-[300px] w-auto" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section className="pb-20 md:pb-24">
-    <div className="main-grid items-start">
+    <div className="main-grid items-start mb-10">
       <div className="col-span-5 md:col-span-2">
         <h2 className="font-dela uppercase text-[1.15rem] md:text-[1.35rem] leading-[1.1]">
           Transformative learning experiences
         </h2>
       </div>
-
       <div className="col-span-5 md:col-span-3 text-[1.05rem] md:text-[1rem] leading-[1.18]">
-        <p className="max-w-[760px]">
-          We co-organized the Global Doughnut Days Mexico 2025, a three day gathering focused on approaching alternative economic frameworks and practices - using the Doughnut Economics framework as guide, together with Coalición Tricolor, a member of the Doughnut Economics Action Lab community. The event included and serviced academics, government officials, business leaders and financiers.
-        </p>
+        <p>We co-organized the Global Doughnut Days Mexico 2025...</p>
       </div>
     </div>
 
-    <div className="horizontal-scroll-container main-grid pl-6 md:pl-0">
-      <div className="flex gap-4 overflow-x-auto pb-4">
-        <img src="/assets/images/cambio_natural.png" alt="Foto 1" className="scroll-img h-[300px] w-auto" />
-        <img src="/assets/images/cambio_natural.png" alt="Foto 2" className="scroll-img h-[300px] w-auto" />
+    <div className="main-grid">
+      <div className="col-span-5 md:col-start-3 md:col-span-3">
+        <div className="horizontal-scroll-container overflow-x-auto">
+          <div className="flex gap-4 pb-4">
+            <img src="/assets/images/cambio_natural.png" alt="Foto" className="scroll-img h-[300px] w-auto" />
+            <img src="/assets/images/cambio_natural.png" alt="Foto" className="scroll-img h-[300px] w-auto" />
+          </div>
+        </div>
       </div>
     </div>
-
   </section>
 
   <section className="pb-24 md:pb-32">
