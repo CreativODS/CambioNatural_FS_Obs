@@ -3,66 +3,65 @@ import React from "react";
 import Image from "next/image";
 
 export default function WeAreHero({ children }) {  
-   return (
-     <section
-      className="
-        relative w-screen left-1/2 -translate-x-1/2
-        h-auto min-h-[75vh]
-        bg-[#F90068]
+  return (
+    <section
+      className="
+        relative 
+        w-full 
+        h-auto 
+        min-h-[75vh]
+        bg-[#F90068]
+        flex 
+        items-start 
+        justify-start 
+        overflow-hidden
+        py-24
+        px-6
+        md:px-16
+      "
+    >
 
-         flex items-start justify-start 
-        overflow-hidden
-        py-24
-        px-8
-      "
-    >
-      {/* Imagen decorativa (Se mantiene igual) */}
-      <div
-        className="
-          absolute
-          top-0
-          right-0
-          translate-x-[20%]
-          translate-y-[-35%]
-          w-[45%]
-          max-w-[1200px]
-          pointer-events-none
-        "
-      >
-        <Image
-          src="/assets/images/puntitos blanco.png"
-          alt="Decoración puntitos"
-          width={720}
-          height={720}
-          className="w-full h-auto object-contain"
-          priority
-        />
-      </div>
+      <div
+        className="
+          absolute
+          top-0
+          right-0
+          translate-x-[15%]
+          -translate-y-[25%]
+          w-[45%]
+          max-w-[800px]
+          pointer-events-none
+          select-none
+          z-0
+        "
+      >
+ <Image
+          src="/assets/images/puntitos blanco.png"
+          alt="Decoración puntitos"
+          width={720}
+          height={720}
+          className="w-full h-auto object-contain opacity-80"
+          priority
+        />
+      </div>
 
-      {/* TEXTO */}
-      <div
-        className="
-          relative z-10
-          /* CORREGIDO: Alineación a la izquierda */
-          text-center
-          text-white
-          /* Ancho para forzar el salto de línea de la referencia */
-          max-w-4xl 
-          mx-auto
-          w-full 
-          /* Posición alta */
-          mt-[12vh] 
-          
-          /* Aplicamos estilos base que se heredarán */
-          text-[2rem]
-          leading-[1]
+      <div
+        className="
+          relative 
+          z-10
+          text-left 
+          text-white
+          max-w-5xl 
+          w-full 
+          mt-[12vh] 
+          text-[1.8rem]
+          md:text-[2.5rem]
+          leading-[1.2]
           font-inter
-          
-         
-        "
-      >
-        {children}
-      </div>
-    </section>
-  );
+        "
+      >
+        {children}
+      </div>
+    </section>
+  );
 }
