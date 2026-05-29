@@ -1,3 +1,4 @@
+import Newsletter from '../components/Newsletter'
 import { ToolsHero } from '../components/ToolsHero'
 import ToolsSection from '../components/ToolsSection';
 
@@ -12,73 +13,48 @@ import ToolsSection from '../components/ToolsSection';
   </span>
 </ToolsHero>
 
-<ToolsSection>
+<ToolItem 
+  alignment="left"
+  title="For Nature"
+  subtitle="Tools for nourishing our nature"
+  description="Every day there are more and more phenomena around the world urging us to redefine our relationship with the planet's natural systems."
+  buttonText="Discover more here"
+  imageSrc="/assets/images/rallitas verdes.png"
+/>
 
-  <div>
-    <span className="tools-normal">Toolkit</span>
+<ToolItem 
+  alignment="right"
+  title="For Technology"
+  subtitle="Tech for the birth of the world"
+  description="We are at the brink between the end of this world and the birth of a new one. We don't need tech for the end of the world, we need tech for the birth of the new one. Here are some technologies for delivering and caring for this moment."
+  buttonText="Discover more here"
+  imageSrc="/assets/images/rallitas verdes.png"
+/>
 
-    <span className="tools-gothic">
-      Meta-methodology for social innovation – Essentials
-    </span>
-  </div>
+<ToolItem 
+  alignment="left"
+  title="For Nature"
+  subtitle="Tools for nourishing our nature"
+  description="Every day there are more and more phenomena around the world urging us to redefine our relationship with the planet's natural systems."
+  buttonText="Discover more here"
+  imageSrc="/assets/images/rallitas verdes.png"
+/>
 
-  <img src="/assets/images/meta-crisis.png" alt="" />
+<ToolItem 
+  alignment="right"
+  title="For Community"
+  subtitle="Tools for nurturing communities"
+  description="As Cambio Natural, we foster open dialogue, radical listening, and learning from the creative tensions that emerge through it. We invite everyone (starting with ourselves) to recognize their complicity in systemic problems while embracing their capacity for growth and change. Here are some tools from our collective experience that can help nourish your community."
+  buttonText="Discover more here"
+  imageSrc="/assets/images/rallitas verdes.png"
+/>
 
-</ToolsSection>
+  <section className="pb-24 md:pb-32">
+    <div className="main-grid">
+      <div className="col-span-5">
+        <Newsletter />
+      </div>
+    </div>
+  </section>
 
-
-<ToolsCardsSection>
-
-  <div>
-    <img src="/assets/images/tool1.jpg" alt="" />
-    <span>Toolkit Module One</span>
-    <span>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </span>
-  </div>
-
-  <div>
-    <img src="/assets/images/tool2.jpg" alt="" />
-    <span>Toolkit Module Two</span>
-    <span>
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur.
-    </span>
-  </div>
-
-  <div>
-    <img src="/assets/images/tool3.jpg" alt="" />
-    <span>Toolkit Module Three</span>
-    <span>
-      Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </span>
-  </div>
-
-</ToolsCardsSection>
-
-
-<ToolsClosingSection>
-
-<div className="tools-body">
-  <span className="tools-title">CAMBIO NATURAL</span> 
-  developed a Cross-sector 
-  Collaboration Management 
-  Framework and Toolkit for 
-  TeamUp, a cross-sectoral initiative 
-  supporting young people in rural 
-  Uganda that has enabled youth
-  leaders, local government, civil
-  society, NGOs and private 
-  companies to come together and 
-  engage in a purposeful way 
-  guided by common values and 
-  principles.
 </div>
-
-<div className="tools-footer">
-  Tool for alignment of purpose and strategy
-</div>
-
-</ToolsClosingSection>
