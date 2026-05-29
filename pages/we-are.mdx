@@ -1,3 +1,5 @@
+import Newsletter from '../components/Newsletter';
+import Newsletter from '../components/FounderItem';
 import WeAreHero from '../components/WeAreHero'
 import WeAreSecondSection from "../components/WeAreSecondSection";
 import CoFounders from '../components/CoFounders'
@@ -6,13 +8,53 @@ import OurEcoSystem from '../components/OurEcoSystem'
 <WeAreHero>
   <div>
   
-    a collective of practitioners 
-    <span className="font-dela text-[1.8rem] leading-[1] ">committed to overcome</span>
-
-    <span className="font-dela text-[1.8rem] leading-[1] "> the increasing strategic polarization</span> 
-    and how it hinders kinship and Planetary Health.
+    A collective of practitioners committed to overcome the increasing strategic polarization and how it hinders kinship and
+    <span className="underline-text">polycrises</span>
+     All of us trying to make sense of the world and how to
+    <span className="font-dela text-[1.8rem] leading-[1] ">embody alternative futures.</span>
   </div>
 </WeAreHero>
+
+  {/* SECCIÓN 1: Cuerpo01 */}
+  <section className="main-grid py-16">
+    <div className="col-span-5 font-inter text-2xl leading-relaxed">
+      We offer tools and spaces for dialogue and collaboration, supporting bridge builders and caregivers with methods, meetings and communities. We come from different cultures and geographies, both nomads and place based individuals, who have met through shared spaces of study.
+      <br /><br />
+      Our meta-methodolgy for social innovation for Planetary Health offers a guideline to align the attention and intention of diverse actors and bridge local knowledge and systems with global scientific and practical frameworks.
+      We participate in different virtual and physical spaces and engage with communities rooted in diverse ecosystems and bioregions to learn from their practice, wisdom and experience and together convene the elements that nourish local sanctuaries for alternative futures. We bring wisdom and practice from the margins to the focus of transformative actions guided by reciprocity, mutual care and regeneration.
+    </div>
+  </section>
+  
+  {/* Founders section */}
+<section className="main-grid pt-32 pb-12">
+  <div className="col-start-2 col-span-3 text-center">
+      <h2 className="font-dela text-[1.45rem] md:text-[2rem] uppercase">
+       Founding members
+      </h2>
+    </div>
+  </section>
+
+    {/* Cesar Esquinca */}
+    <FounderSection 
+  name="Cesar Jerónimo"
+  imageSrc="/images/cesar esquinca fhotoweb.png"
+  description="Nomad born in Mexico who loves cultural and ecological diversity, supporting learning and community resilience across his path. Convening and facilitating collaboration for Planetary Health at Cambio Natural, with a focus on marginal practices and the most affected people and areas."
+/>
+
+    {/* Blaga */}
+<FounderSection 
+  name="Blaga"
+  imageSrc="/images/Blaga fhotoweb white.png"
+  reverse={true}
+  description="A systems thinker, facilitator and bridge builder driven by curiosity and purpose. I believe that learning and unlearning from each other is key for building the future we desire. At Cambio Natural, I hope to spark collaborative action and work with people and organizations to lead the way to transforming food systems as a path towards Planetary Health."
+/>
+
+    {/* Marcelo */}
+    <FounderSection 
+  name="Marcelo"
+  imageSrc="/images/marcelo.png"
+  description="Political scientist, communication specialist, and ethical-technology polemist, committed to building and nurturing new narratives that help people decolonize both their imagination and behavior. In my work with Cambio Natural, I aim to promote an integrative vision where complex thinking becomes a tool, not a barrier, for creating a world where many worlds can coexist."
+/>
 
 <WeAreSecondSection>
   <span><strong>CAMBIO NATURAL</strong></span>
