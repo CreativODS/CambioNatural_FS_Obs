@@ -1,95 +1,74 @@
-<MediaClubFeatureSection>
+import Article from '../components/Article';
+import Newsletter from '../components/Newsletter';
 
-  <div>
-    <span>METACRISIS THE CRISIS OF ALL THE CRISIS</span>
-    <span>
-      Have you ever thought about how the each crisis are connected?
-      theres critical point that detonate and interconnect crisis in each context...
-    </span>
-    <span>Read article</span>
-  </div>
+<div className="overflow-hidden bg-black text-white">
 
-  <img src="/assets/images/meta-crisis.png" alt="" />
+  {/* HERO SECTION */}
+  <section className="relative pt-16 md:pt-24 pb-20 md:pb-28">
+    <img
+      src="/assets/images/oceanos-blanco.png"
+      alt=""
+      className="pointer-events-none select-none absolute left-[-5rem] top-20 w-[11rem] md:left-[-7rem] md:top-32 md:w-[22rem]"
+    />
 
-</MediaClubFeatureSection>
-
-
-
-<MediaClubQuoteSection>
-  <div>
-    <span>
-      “We offer tools and spaces for dialogue and collaboration,
-    </span>
-    <span>
-      supporting bridge builders and caregivers”
-    </span>
-  </div>
-</MediaClubQuoteSection>
-
-
-<MediaClubGridSection>
-
-  <div>
-    <img src="/assets/images/cambio_natural.png" />
-    <div>
-      <span>Lorem ipsum dolor sit amet...</span>
+    <div className="main-grid relative z-10">
+      <div className="col-span-5 md:col-start-2 md:col-span-3">
+        <p className="leading-[1.08]">
+          <span className="block text-[1.45rem] md:text-[2.2rem] font-inter">
+            MediaClub is a space for dialogue and collaborative learning, where we explore the intersection of media, technology, and society.
+          </span>
+          <span className="font-dela block mt-8 text-[1.45rem] md:text-[2.2rem] leading-[1.06]">
+            We build shared understanding through shared media.
+          </span>
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div>
-    <img src="/assets/images/cambio_natural.png" />
-    <div>
-      <span>Duis aute irure dolor...</span>
+  {/* SECCIÓN 1: Texto puro 5 columnas */}
+  <section className="main-grid py-16">
+    <div className="col-span-5 font-inter text-2xl text-gray-300 leading-relaxed">
+      In our interconnected reality, the way we consume and produce media defines the boundaries of our empathy and our capacity for collective action. MediaClub serves as a laboratory for these dynamics, fostering deep reflections on how narratives are crafted and disseminated in the digital age.
     </div>
-  </div>
+  </section>
 
-  <div>
-    <img src="/assets/images/cambio_natural.png" />
-    <div>
-      <span>Excepteur sint occaecat...</span>
+  {/* SECCIÓN 2: Article.jsx (Usando col 2,3,4) */}
+  <section className="main-grid py-20">
+    <div className="col-start-2 col-span-3">
+      <Article 
+        category="Featured Club"
+        title="The future of digital narrative"
+        description="Exploring how new technologies enable more democratic and pluralistic ways of storytelling, breaking the cycles of traditional media dominance."
+        link="#"
+        imageSrc="/assets/images/media-visual.png"
+      />
     </div>
-  </div>
+  </section>
 
-  <div>
-    <img src="/assets/images/rallitas verdes.png" />
-    <div>
-      <span>Lorem ipsum dolor sit amet...</span>
+  {/* SECCIÓN 3: Texto centrado columnas 2-4 */}
+  <section className="main-grid py-20">
+    <div className="col-start-2 col-span-3 text-center">
+      <h3 className="font-inter text-3xl font-medium mb-6">Join the conversation</h3>
+      <p className="text-xl text-gray-400">
+        Every encounter is an opportunity to challenge our assumptions and expand our collective perspective.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div>
-    <img src="/assets/images/figuras azules.png" />
-    <div>
-      <span>Duis aute irure dolor...</span>
+  {/* SECCIÓN 4: Texto en Dela */}
+  <section className="main-grid py-20">
+    <div className="col-span-5 text-center">
+      <h2 className="font-dela text-[3rem] md:text-[4rem] uppercase">
+        Create. Listen. Transform.
+      </h2>
     </div>
-  </div>
+  </section>
 
-  <div>
-    <img src="/assets/images/puntitos blanco.png" />
-    <div>
-      <span>Excepteur sint occaecat...</span>
+  {/* NEWSLETTER */}
+  <section className="main-grid py-20">
+    <div className="col-span-5">
+      <Newsletter />
     </div>
-  </div>
+  </section>
 
-    <div>
-    <img src="/assets/images/marcelo.png" />
-    <div>
-      <span>Lorem ipsum dolor sit amet...</span>
-    </div>
-  </div>
-
-  <div>
-    <img src="/assets/images/puntos rosas.png" />
-    <div>
-      <span>Duis aute irure dolor...</span>
-    </div>
-  </div>
-
-  <div>
-    <img src="/assets/images/meta-crisis.png" />
-    <div>
-      <span>Excepteur sint occaecat...</span>
-    </div>
-  </div>
-
-</MediaClubGridSection>
+</div>
