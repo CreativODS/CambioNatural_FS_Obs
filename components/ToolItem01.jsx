@@ -3,7 +3,7 @@ import React from 'react';
 export default function ToolItem01({ title, subtitle, description, buttonText, imageSrc }) {
   return (
     <div className="main-grid grid grid-cols-5 items-start py-20 mt-16 gap-8">
-<div className="col-span-4 flex flex-col items-center">
+<div className="col-span-3 flex flex-col items-center">
         <h2 className="font-dela text-[2rem] uppercase leading-tight mb-2 self-start text-left">
           {title}
         </h2>
@@ -14,14 +14,14 @@ export default function ToolItem01({ title, subtitle, description, buttonText, i
           {description}
         </p>
         
-        {/* Botón: font-dela y centrado respecto al bloque */}
+        {/* Botón */}
         <button className="bg-black text-white px-8 py-3 rounded-md hover:opacity-85 transition-opacity font-dela text-sm uppercase tracking-wider self-center">
           {buttonText}
         </button>
       </div>
 
-      {/* Columna de la Imagen */}
-      <div className="col-span-1 flex justify-center">
+      {/* Imagen */}
+      <div className="col-span-2 flex justify-center">
         <img src={imageSrc} alt={title} className="w-full max-h-[350px] object-contain" />
       </div>
     </div>
