@@ -1,4 +1,4 @@
-export default function FounderSection({ name, description, imageSrc, imageAlt, reverse = false }) {
+export default function FounderItem({ name, description, imageSrc, imageAlt, reverse = false }) {
   return (
     <section className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} gap-12 items-center my-20`}>
       {/* Columna de Texto */}
