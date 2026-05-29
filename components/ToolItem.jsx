@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function ToolItem({ title, subtitle, description, buttonText, imageSrc, position = "left" }) {
-  
+export default function ToolItem({ title, subtitle, description, buttonText, imageSrc, alignment = "left" }) {
+      
   // Lógica para decidir dónde colocar el texto según la posición
 const textClasses = alignment === "left" 
     ? "col-start-1 col-span-3" 
     : "col-start-3 col-span-3";
     
-  const imageClasses = alignment === "left" 
+  const imageClasses = alignment === "right" 
     ? "col-start-5 col-span-1" 
     : "col-start-1 col-span-1";
 
