@@ -15,10 +15,10 @@ export default function FounderItem({ name, description, imageSrc, imageAlt, rev
           ${reverse ? 'md:col-start-3 md:col-span-3' : 'md:col-start-1 md:col-span-3'}
         `}
       >
-        <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl font-dela uppercase">
+        <h2 className="text-3xl font-bold tracking-normal text-white md:text-4xl font-dela">
           {name}
         </h2>
-        <p className="text-lg leading-relaxed whitespace-pre-line font-inter">
+        <p className="text-xl md:text-2xl leading-relaxed whitespace-pre-line font-inter">
           {description}
         </p>
       </div>

@@ -20,7 +20,7 @@ export default function WeAreHero({ children }) {
           absolute
           top-0
           left-0
-          -translate-x-[30%]
+          -translate-x-[40%]
           -translate-y-[25%]
           w-[45%]
           max-w-[800px]
@@ -52,8 +52,8 @@ export default function WeAreHero({ children }) {
             leading-[1.3]
             font-inter
             
-            [&_.font-dela]:text-[1.8rem]
-            md:[&_.font-dela]:text-[2.8rem]
+            [&_.font-dela]:text-[1.6rem]
+            md:[&_.font-dela]:text-[2.6rem]
             [&_.font-dela]:leading-[1.1]
           "
         >
