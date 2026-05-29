@@ -11,22 +11,16 @@ export default function WeAreHero({ children }) {
         h-auto 
         min-h-[75vh]
         bg-[#F90068]
-        flex 
-        items-start 
-        justify-start 
         overflow-hidden
         py-24
-        px-6
-        md:px-16
       "
-    >
-
-      <div
+ >
+<div
         className="
           absolute
           top-0
-          right-0
-          translate-x-[15%]
+          left-0
+          -translate-x-[20%]
           -translate-y-[25%]
           w-[45%]
           max-w-[800px]
@@ -45,22 +39,26 @@ export default function WeAreHero({ children }) {
         />
       </div>
 
-      <div
-        className="
-          relative 
-          z-10
-          text-left 
-          text-white
-          max-w-5xl 
-          w-full 
-          mt-[12vh] 
-          text-[1.8rem]
-          md:text-[2.5rem]
-          leading-[1.2]
-          font-inter
-        "
-      >
-        {children}
+<div className="main-grid relative z-10 w-full h-full mt-[12vh]">
+        <div
+          className="
+            col-span-5 
+            md:col-start-2 
+            md:col-span-4
+            text-left 
+            text-white
+            text-[1.8rem]
+            md:text-[2.3rem]
+            leading-[1.3]
+            font-inter
+            
+            [&_.font-dela]:text-[2.2rem]
+            md:[&_.font-dela]:text-[3.2rem]
+            [&_.font-dela]:leading-[1.1]
+          "
+        >
+          {children}
+        </div>
       </div>
     </section>
   );
