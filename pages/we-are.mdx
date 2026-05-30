@@ -101,51 +101,39 @@ import OurEcoSystem from '../components/OurEcoSystem'
   <div><img src="/assets/amarillo.png" alt="Partner 1" /></div>
 </OurEcoSystem>
 
-<OurCoreElements>
+  <section className="pb-24 md:pb-32">
+    <div className="main-grid">
+      <div className="col-span-5">
+        <Newsletter />
+      </div>
+    </div>
+  </section>
+  
+<OurCoreElements title="Our Core Elements">
 
-  {/* Elemento 1: Texto Izquierda / Imagen Derecha */}
-  <div> 
-    <div>
-      <span>how do we redefine our relation</span>
-      <span>with the ecosystem around and inside us?</span>
-    </div>
-    <div>
-      <img src="/assets/images/amarillo.png" alt="Common health future" />
-    </div>
-  </div>
+  <CoreItem 
+    title="how do we redefine our relation" 
+    description="with the ecosystem around and inside us?" 
+    imageSrc="/assets/images/amarillo.png"
+    reverse 
+  />
 
-  {/* Elemento 2: Imagen Izquierda / Texto Derecha (Automático) */}
-  <div>
-    <div>
-      <span>how do we share different types of value</span>
-      <span>with reciprocity and care?</span>
-    </div>
-    <div>
-      <img src="/assets/images/rallitas verdes.png" alt="Bridge builders" />
-    </div>
-  </div>
+  <CoreItem 
+    title="how do we share different types of value" 
+    description="with reciprocity and care?" 
+    imageSrc="/assets/images/rallitas verdes.png"
+  />
 
-  {/* Elemento 3: Texto Izquierda / Imagen Derecha */}
-  <div>
-    <div>
-      <span>which technologies are relevant for </span>
-      <span>the birth of the futures we desire?</span>
-    </div>
-    <div>
-      <img src="/assets/images/figuras azules.png" alt="Collaborative study" />
-    </div>
-  </div>
+  <CoreItem 
+    title="which technologies are relevant for " 
+    description="the birth of the futures we desire?" 
+    imageSrc="/assets/images/figuras azules.png" 
+    reverse 
+  />
 
-  {/* Elemento 4: Imagen Izquierda / Texto Derecha (Automático) */}
-  <div>
-    <div>
-      <span>how do we organize and collaborate </span>
-      <span>centering ecosystemic kinship?</span>
-    </div>
-    <div>
-      <img src="/assets/images/puntos rosas.png" alt="Alternative futures" />
-    </div>
-  </div>
-
-</OurCoreElements>
+    <CoreItem 
+    title="how do we organize and collaborate " 
+    description="centering ecosystemic kinship?" 
+    imageSrc="/assets/images/puntos rosas.png"
+  />
 
