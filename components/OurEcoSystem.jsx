@@ -10,17 +10,17 @@ export default function OurEcoSystem({ children }) {
           main-grid 
           w-full 
           gap-y-16 
-          items-center
+          items-start
 
           {/* ELEMENTO 1 */}
           [&>*:nth-child(1)]:col-span-5
           md:[&>*:nth-child(1)]:col-span-2
           [&>*:nth-child(1)]:space-y-3
 
-          {/* Estilos específicos para las etiquetas de título internas */}
+          {/* Etiquetas de título internas */}
           [&_strong]:font-dela
-          [&_strong]:text-3xl
-          md:[&_strong]:text-4xl
+          [&_strong]:text-2xl
+          md:[&_strong]:text-3xl
           [&_strong]:text-black
           [&_strong]:block
           [&_strong]:tracking-normal
@@ -30,7 +30,7 @@ export default function OurEcoSystem({ children }) {
           [&_span]:text-black
           [&_span]:block
 
-          {/* ELEMENTO 2 (Texto de Integrantes): El segundo hijo del MDX va en columnas 3, 4 y 5 */}
+          {/* Texto de Integrantes */}
           [&>*:nth-child(2)]:col-span-5
           md:[&>*:nth-child(2)]:col-start-3
           md:[&>*:nth-child(2)]:col-span-3
@@ -41,7 +41,7 @@ export default function OurEcoSystem({ children }) {
           [&>*:nth-child(2)]:leading-relaxed
           [&>*:nth-child(2)]:text-black
 
-          {/* ELEMENTO 3 en adelante (Logotipos): Se vuelven celdas individuales de 1 columna */}
+          {/* Logotipos */}
           [&>*:nth-child(n+3)]:col-span-5
           sm:[&>*:nth-child(n+3)]:col-span-2
           md:[&>*:nth-child(n+3)]:col-span-1
@@ -50,7 +50,9 @@ export default function OurEcoSystem({ children }) {
           [&>*:nth-child(n+3)]:items-center
           [&>*:nth-child(n+3)]:w-full
 
-          {/* Control estricto de las imágenes de los logos para evitar deformación */}
+          md:[&>*:nth-child(3)]:mt-20
+
+          {/* Size image controls */}
           [&>*:nth-child(n+3)_img]:h-[60px]
           [&>*:nth-child(n+3)_img]:w-full
           [&>*:nth-child(n+3)_img]:object-contain
